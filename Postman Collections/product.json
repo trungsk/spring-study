@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "3966318b-eb52-4d1c-8aac-08ceee9f65df",
+		"name": "ok",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8200/api/v1/Users",
+			"_postman_id": "81fca5d4-dfd2-475e-8240-72b20b334c37",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "",
+						"password": ""
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"thuquynh\",\r\n    \"email\": \"amikard.gm@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"gender\": \"MALE\",\r\n    \"firstName\": \"Cao Thu\",\r\n    \"lastName\": \"Quynh\",\r\n    \"birthday\": \"1997-08-02\",\r\n    \"address\": \"Yen So\",\r\n    \"phone\": \"0123456789\",\r\n    \"role\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8200/api/v1/Users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/login",
+			"_postman_id": "cacad170-ebd1-4670-8dd4-46b38e7ed44c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "123",
+						"username": "dbadmin1"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7999/api/v1/Users",
+			"_postman_id": "934dec3f-60bd-482d-9d21-9b2e5197a9c1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"thanhtrung\",\r\n    \"email\" : \"thanhtrung2500@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"gender\" : \"MALE\",\r\n    \"firstName\": \"Nguyen thanh\",\r\n    \"lastName\": \"Trung\",\r\n    \"birthday\": \"1996-10-10\",\r\n    \"address\": \"Ha Noi\",\r\n    \"phone\": \"01234567890\",\r\n    \"role\": \"Admin\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7999/api/v1/Users"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/management/api/v1/Users",
+			"_postman_id": "e3146161-11d3-4ef8-94ea-d8eb5f30c8a9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/management/api/v1/Users"
+			},
+			"response": []
+		},
+		{
+			"name": "getProducts",
+			"_postman_id": "97007aca-9bac-45cf-8916-0c14f44b2a0d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "3c92ceb2-23ca-4ff5-a2aa-9159693b3eb8",
+						"username": "user"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9898/api/v1/products"
+			},
+			"response": []
+		},
+		{
+			"name": "insertProduct",
+			"_postman_id": "18234651-d9bc-4757-86b4-26d18c06ada8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "updateProd",
+			"_postman_id": "f0f374f3-7d01-47f5-b29b-05281bda5ebe",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProd",
+			"_postman_id": "4dde963b-d4cc-47ad-8512-2b1358849f4b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "uploadImage",
+			"_postman_id": "4653628b-ba5e-46ca-86f6-ff76b7346b4a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/products/3"
+			},
+			"response": []
+		},
+		{
+			"name": "viewImage",
+			"_postman_id": "703b9f1c-28cf-4705-a83b-d9733eaf716c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "getAllFiles",
+			"_postman_id": "3d1dd9e1-66fa-431a-b01f-bc064c54b327",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
