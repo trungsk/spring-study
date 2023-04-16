@@ -1,12 +1,14 @@
 package com.demo.unittesting.service;
 
-import com.demo.unittesting.model.Fighter;
-import com.demo.unittesting.repository.FighterRepository;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.demo.unittesting.model.Fighter;
+import com.demo.unittesting.repository.FighterRepository;
+
+import lombok.AllArgsConstructor;
 
 /**
  * @author itsol.trung.nt
@@ -16,9 +18,10 @@ import java.util.List;
 @AllArgsConstructor
 @Service
 public class FighterService {
-    private final FighterRepository fighterRepository;
-
-    public List<Fighter> getAllFighter(){
+	@Autowired
+    private FighterRepository fighterRepository;
+    
+	public List<Fighter> getAllFighter(){
         return fighterRepository.findAll();
     }
     public void addFighter(Fighter fighter){
